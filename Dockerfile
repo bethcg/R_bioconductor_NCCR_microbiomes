@@ -19,4 +19,4 @@ USER ${NB_USER}
 
 # Install R dependencies
 RUN R -e "install.packages(c('agricolae','BiocManager', 'cowplot', 'data.table', 'dplyr', 'ggpubr', 'gridExtra', 'reshape2', 'rmdformats', 'scales', 'tidyverse', 'vegan'))"
-RUN R -e "BiocManager::install("phyloseq")"
+RUN R -e "BiocManager::install(c('phyloseq'))"
